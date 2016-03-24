@@ -1,0 +1,6 @@
+backup*
+node_modules
+
+# Logs
+logs
+*.log

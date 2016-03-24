@@ -1,0 +1,28 @@
+{
+  "name": "backup-gists",
+  "version": "0.1.0",
+  "description": "Backup gists for both github.com and github enterprise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/request/request.git"
+  },
+  "tags": [
+    "gist",
+    "gists",
+    "backup",
+    "node-gists",
+    "github enterprise"
+  ],
+  "author": "wu",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "progress": "^1.1.8",
+    "request": "^2.69.0",
+    "sleep": "^3.0.1"
+  }
+}
