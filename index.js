@@ -6,6 +6,7 @@ const fs = require('fs')
 const path = require('path')
 const progress = require('progress')
 const sleep = require('sleep')
+const chalk = require('chalk')
 
 conf
   .version(pkg.version)
@@ -46,7 +47,7 @@ r.get({
     throw new TypeError(`unexpected body format: ${typeof body}`)
   }
 
-  const pg = new progress('Backup [:bar] :percent', {
+  const pg = new progress(chalk.green('Backup [:bar] :percent'), {
     complete: '=',
     incomplete: ' ',
     width: 20,
@@ -60,7 +61,7 @@ r.get({
       cwd: path.join(__dirname, BACKUP_DIR)
     }, (err, stdout, stderr) => {
       if(err) {
-        console.error(`clone  ${gist.git_pull_url} failed: ${err || stderr}`)
+        console.error(chalk.red(`clone  ${gist.git_pull_url} failed: ${err || stderr}`))
       }
     })
     pg.tick()

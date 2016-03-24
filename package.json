@@ -1,6 +1,6 @@
 {
   "name": "backup-gists",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Backup gists for both github.com and github enterprise.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/request/request.git"
+    "url": "https://github.com/maowug/backup-gists"
   },
   "tags": [
     "gist",
@@ -20,6 +20,7 @@
   "author": "wu",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.1",
     "commander": "^2.9.0",
     "progress": "^1.1.8",
     "request": "^2.69.0",
