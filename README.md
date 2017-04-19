@@ -13,7 +13,7 @@ npm i
 
 ## Quick Start
 
-For github.com user, the following command will generate a `backup-hh-mm-ss` folder in current directory.
+For github.com user, the following command will generate a `backup-hh-mm-ss` folder in current directory (Don't support two-factor authentication, disable it temporarily).
 ```
 ➜ node index.js -u [username] -p [password]
 ➜ Backup [====================] 100%
